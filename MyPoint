@@ -2,10 +2,39 @@ import java.util.*;
 
 class MyPoint
 {
-
-        public static void main(String[] args)
+        private int x;
+        public int y;
+        static int count;
+        
+        public MyPoint()
+        {
+        }
+        
+        public int MyPoint(int xx)
+        {
+                this.x = xx;
+        }
+        
+        public int MyPoint(int xx, int yy)
+        {
+                this.x = xx;
+                this.y = yy;
+        }
+        
+        public void setVal1(int xx)
+        {
+        
+        private int noOfObjects(){count++};
         {
                 
+        }
+
+}
+
+class Driver
+{
+        public static void main(String[] args)
+        {
         }
 
 }
