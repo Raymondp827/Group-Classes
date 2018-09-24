@@ -1,7 +1,11 @@
 import java.util.*;
 
-class MyPoint{
+class MyPoint
+{
 
-
+        public static void main(String[] args)
+        {
+                
+        }
 
 }
