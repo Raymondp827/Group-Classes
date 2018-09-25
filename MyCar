@@ -1,33 +1,29 @@
-import java.util*;
+import java.util.*;
 
-class MyCar
-{
-	public string make;
-	public string model;
-	public int MGP;
-	
-	Car milePergallon(Car type)
+class MyCar {
+   
+   static Scanner reader = new Scanner(System.in);
+   public String c_Make;
+   public String c_Model;
+   public int MGP;
+   
+    public void SetMake(String make) 
 	{
-		Car x=new Car();
-		return (x);
-		
-	}
-	
-	Car1.compareMPG(Car2)
-	{
-	this.mpg>car2.mpg;
-	}
+       c_Make = make;
+    }
 
+    public String GetMake() {
+       return c_Make;
+    }
+	
 }
-
 class Driver
 {
-	public static void main (string[] args)
+	public static void main(String[] args)
 	{
-	MyCar car1 =new Car();
-	MyCar car2 =new Car();
+    MyCar MyCarOne = new MyCar();  
+    MyCar MyCarTwo = new MyCar(); 
 	
 	
 	}
-
 }
