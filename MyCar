@@ -1,0 +1,33 @@
+import java.util*;
+
+class MyCar
+{
+	public string make;
+	public string model;
+	public int MGP;
+	
+	Car milePergallon(Car type)
+	{
+		Car x=new Car();
+		return (x);
+		
+	}
+	
+	Car1.compareMPG(Car2)
+	{
+	this.mpg>car2.mpg;
+	}
+
+}
+
+class Driver
+{
+	public static void main (string[] args)
+	{
+	MyCar car1 =new Car();
+	MyCar car2 =new Car();
+	
+	
+	}
+
+}
