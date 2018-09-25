@@ -1,29 +1,87 @@
 import java.util.*;
+import java.util.Scanner;
+
 
 class MyCar {
-   
-   static Scanner reader = new Scanner(System.in);
-   public String c_Make;
-   public String c_Model;
-   public int MGP;
-   
-    public void SetMake(String make) 
+    private static Car c1;
+    private static Car c2;
+    private static Car c3;
+    public static void main(String[] args) 
 	{
-       c_Make = make;
+        String c_Model,c_Make;
+        int c_Mpg;
+        Scanner sc = new Scanner(System.in);
+        c1 = new Car();
+        c2 = new Car(); 
+      
+        System.out.println("Enter The Information On Vechicle One: ");  
+        System.out.print("Make: ");
+        c1.setMake(sc.next());
+        System.out.print("Model: ");
+        c1.setModel(sc.next());
+        System.out.print("MPG: ");
+        c1.setmpg(sc.nextInt());
+		
+		System.out.println("Enter The Information On Vechicle Two: ");  
+        System.out.print("Make: ");
+        c2.setMake(sc.next());
+        System.out.print("Model: ");
+        c2.setModel(sc.next());
+        System.out.print("MPG: ");
+        c2.setmpg(sc.nextInt());
+      
+        System.out.println("Here is the updated information I now have on Mr. Smith's three cars:");
+        System.out.println(c1);
+        System.out.println(c2);
+    }
+}
+
+class Car {
+    private String make;
+    private String model;
+    private int mpg;
+
+    public Car(String make, String model, int mpg) { //parameterized constructor
+        this.make = make;
+        this.model = model;
+        this.mpg = mpg;
     }
 
-    public String GetMake() {
-       return c_Make;
+    public Car() { //default constructor
+        make = "--";
+        model = "--";
+        mpg = 0;
+    }
+
+    // Setters and getters below
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getmpg() {
+        return mpg;
+    }
+
+    public void setmpg(int mpg) {
+        this.mpg = mpg;
     }
 	
-}
-class Driver
-{
-	public static void main(String[] args)
-	{
-    MyCar MyCarOne = new MyCar();  
-    MyCar MyCarTwo = new MyCar(); 
-	
-	
-	}
+    @Override
+    public String toString() {
+        return mpg +"\t" + make + "\t" + model;
+    }
+  
 }
